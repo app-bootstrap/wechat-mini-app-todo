@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <form bindreset="cleanInput">
+      <input
+        maxlength="{{inputMaxLength}}"
+        placeholder="What's your todo?"
+        bindconfirm="confirmTodo"
+        value="{{emptyString}}"
+        class="main-input"
+      />
+    </form>
+  </view>
+  <view class="main">
+    <view
+      class="item"
+      wx:for="{{todos}}"
+      wx:for-index="index"
+      wx:for-item="item"
+      wx:key="id"
+      id="{{item.id}}"
+    >
+      <icon
+        type="{{item.state === 'completed' ? 'success_no_circle' : 'waiting'}}"
+        size="20"
+        bindtap="changeTodo"
+        data-id="{{item.id}}"
+        class="icon"
+      />
+      <text class="content">{{item.content}}</text>
+      <icon
+        data-id="{{item.id}}"
+        bindtap="removeTodo"
+        class="remove"
+        type="cancel"
+      />
+    </view>
+  </view>
+  <view class="footer">
+  </view>
+</view>

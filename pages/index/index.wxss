@@ -1,0 +1,39 @@
+/**index.wxss**/
+
+.main {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.header {
+  padding: 0 3rem;
+}
+
+.main-input {
+  height: 2rem;
+  border: 1px solid #eee;
+  border-radius: 2rem;
+  padding-left: .8rem;
+}
+
+.icon {
+  float: left;
+  margin-top: 0.5rem;
+  opacity: 0.6;
+}
+
+.item {
+  margin-top: 0.8rem;
+}
+
+.content {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  color: #666;
+}
+
+.remove {
+  float: right;
+  margin-top: 0.5rem;
+  opacity: 0.3;
+}
