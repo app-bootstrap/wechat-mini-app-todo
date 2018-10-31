@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <view class="header">
-    <form bindreset="cleanInput">
+    <form>
       <input
         maxlength="{{inputMaxLength}}"
         placeholder="What's your todo?"
